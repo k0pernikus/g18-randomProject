@@ -6,10 +6,16 @@
 package randomproject;
 
 /**
- *
  * @author Philipp Kretzschmar
  */
 public class PlainText extends TextDecorator {
+
+    @Override
+    public String getTextDescription() {
+        return "Plain text";
+    }
+
+
     public String bold(String string) {
         return wrap("*", string);
     }

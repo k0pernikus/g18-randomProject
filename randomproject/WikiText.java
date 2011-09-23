@@ -3,18 +3,19 @@ package randomproject;
 /**
  * @author Philipp Kretzschmar
  */
-public class HTML extends TextDecorator {
+public class WikiText extends TextDecorator{
+
     @Override
     public String getTextDescription() {
-        return "HTML";
+        return "WikiText";
     }
 
     public String bold(String string) {
-        return wrap("<b>", "</b>", string);
+        return wrap("'''", string);
     }
 
     public String italics(String string) {
-        return wrap("<i>", "</i>", string);
+        return wrap("''", string);
     }
 
     public String underline(String string) {

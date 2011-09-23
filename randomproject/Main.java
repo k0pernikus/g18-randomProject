@@ -10,6 +10,7 @@ public class Main {
         
         Out.put(new PlainText().bold("Foobar"));
         Out.put(new HTML().bold("Foobar"));
+        Out.put(new WikiText().bold("Foobar"));
     }
 
     static class Out {
