@@ -9,16 +9,16 @@ package randomproject;
  *
  * @author Philipp Kretzschmar
  */
-public class PlainText extends Text {
+public class PlainText extends TextDecorator {
     public String bold(String string) {
-        return "*" + string + "*";
+        return wrap("*", string);
     }
 
     public String italics(String string) {
-        return "/" + string + "/";
+        return wrap("/",string);
     }
 
     public String underline(String string) {
-        return "_" + string + "_";
+        return wrap("_", string);
     }
 }

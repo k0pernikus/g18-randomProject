@@ -7,13 +7,13 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //Output o = new Output();
         
-        System.out.println(new PlainText().bold("Foobar"));
+        Out.put(new PlainText().bold("Foobar"));
+        Out.put(new HTML().bold("Foobar"));
     }
 
-    class Output {
-        public void pln(String string) {
+    static class Out {
+        public static void put(String string) {
             System.out.println(string);
         }
     }
