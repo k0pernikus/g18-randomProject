@@ -3,7 +3,7 @@ package randomproject;
 /**
  * @author Philipp Kretzschmar
  */
-public class WikiText extends TextDecorator{
+public class WikiText extends TextDecorator {
 
     @Override
     public String getTextDescription() {
