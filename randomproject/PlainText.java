@@ -7,7 +7,7 @@ public class PlainText extends TextDecorator {
 
     @Override
     public String getTextDescription() {
-        return "Plain text";
+        return "PlainText";
     }
 
     public String bold(String string) {

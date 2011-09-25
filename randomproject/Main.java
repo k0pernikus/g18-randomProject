@@ -10,13 +10,23 @@ public class Main {
      */
     public static void main(String[] args) {
 
-        Out.put(new PlainText().bold("Foobar"));
-        Out.put(new HTML().bold("Foobar"));
-        Out.put(new WikiText().bold("Foobar"));
+        TextDecorator[] TextDecos = new TextDecorator[3];
+
+        TextDecos[0] = new HTML();
+        TextDecos[1] = new PlainText();
+        TextDecos[2] = new WikiText();
+
+        for (TextDecorator textDecorator : TextDecos) {
+            Out.put(textDecorator.getTextDescription());
+            Out.put(textDecorator.bold("Foobar"));
+            Out.put(textDecorator.italics("Foobar"));
+            Out.put(textDecorator.underline("Foobar"));
+            Out.put("================================");
+        }
     }
 
-    static class Out {
 
+    static class Out {
         public static void put(String string) {
             System.out.println(string);
         }
