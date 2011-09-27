@@ -20,7 +20,7 @@ public class WikiText extends TextDecorator {
 
     public String underline(String string) {
         // anonymer aufruf der HTML.underlinde-Methode
-        // da gleiche Ergebnisse gefordert ist
+        // da gleiche Implementation
         return new HTML().underline(string);
     }
 }
