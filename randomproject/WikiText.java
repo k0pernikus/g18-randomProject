@@ -19,6 +19,8 @@ public class WikiText extends TextDecorator {
     }
 
     public String underline(String string) {
-        return wrap("<u>", "</u>", string);
+        // anonymer aufruf der HTML.underlinde-Methode
+        // da gleiche Ergebnisse gefordert ist
+        return new HTML().underline(string);
     }
 }
